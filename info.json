@@ -1,0 +1,10 @@
+{
+    "name": "ZZZ-RecyclerFinalFinal",
+    "version": "0.1.2",
+    "title": "Recycler Final Final",
+    "author": "planetfall",
+    "homepage": "",
+    "description": "Pushes recycler recipe generation to the very end of data final fixes, so mods can edit recipes at any point. Also slightly modifies how recycler recipes are generated, to make it more flexible for modding.",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0", "? quality"]
+}

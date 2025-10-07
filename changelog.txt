@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+  Changes:
+    - Included a copy of The Unlicense
+    - Changed biolabs and captive biter spawners back to recycling into themselves. (This is intended as a library, not a balance patch.)
+  Bugfixes:
+    - Fixed a startup error when there are no bespoke recipes.
+    - Fixed some functions not being local when they should have been.
+  Features:
+    - Functionality that previously checked for specific recipe categories will now affect any recipe category that the recycler can perform, including any added to it by mods.
+    - Automatically resize the recycler's output inventory to accommodate the recycling recipe with the most products.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+  Features:
+    - Automatically sort bespoke recycling recipes' products by probability.
+    - You can set the bespoke field on recipes to an item ID rather than just true. RFF will rename the recipe to <whatever>-recycling and overwrite the existing <whatever>-recycling recipe if it already exists. So if you are trying to do something weird, you can name your bespoke recipe something like custom-whatever-recycling to ensure it is not obliterated by the sledgehammer pretending to be a framework that is baseline recycling recipe generator behavior. If multiple bespoke recipes point at the same item, this will cause a startup error (better than failing silently or making an arbitrary decision.) Setting bespoke to true still works as it did previously, but this may help if you're having trouble ensuring your custom recycling recipes survive until data-final-fixes.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+  Info:
+    - Initial release.
