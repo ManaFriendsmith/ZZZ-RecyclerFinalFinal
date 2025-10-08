@@ -6,6 +6,7 @@ Version: 0.1.2
   Bugfixes:
     - Fixed a startup error when there are no bespoke recipes.
     - Fixed some functions not being local when they should have been.
+    - Leave non-recycling recipes marked as bespoke alone
   Features:
     - Functionality that previously checked for specific recipe categories will now affect any recipe category that the recycler can perform, including any added to it by mods.
     - Automatically resize the recycler's output inventory to accommodate the recycling recipe with the most products.

@@ -121,7 +121,7 @@ local new_recipes = {}
 local biggest_result_list = 12
 
 for k, v in pairs(data.raw.recipe) do
-    if type(v.bespoke) == "string" then
+    if type(v.bespoke) == "string" and recycling_categories[v.category] then
         if bespoke_recipes[v.bespoke] then
             error("Conflicting bespoke recycling recipes for " .. v.bespoke .. ": " .. v.name .. " and " .. bespoke_recipes[v.bespoke])
         end
