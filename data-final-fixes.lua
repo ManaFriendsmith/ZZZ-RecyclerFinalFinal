@@ -19,6 +19,7 @@ end
 
 local function get_canonical_recipe(item)
     --if a canonical recipe is specified, use that. no questions asked.
+    if item.recycling_canonical_recipe ~= nil then return item.recycling_canonical_recipe end
     if item.canonical_recipe ~= nil then return item.canonical_recipe end
 
     --if a recipe exists with the exact same name that produces the item, use that.

@@ -10,6 +10,7 @@ Version: 0.1.2
   Features:
     - Functionality that previously checked for specific recipe categories will now affect any recipe category that the recycler can perform, including any added to it by mods.
     - Automatically resize the recycler's output inventory to accommodate the recycling recipe with the most products.
+    - Allow specifying separate recycling_canonical_recipe for what an item recycles into and cost_canonical_recipe for calculating laser mill recipe costs.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
